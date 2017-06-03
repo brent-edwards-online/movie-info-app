@@ -1,0 +1,244 @@
+/* Navbar */
+
+.navbar-inverse {
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a {
+  background: transparent;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > li > a:hover, .navbar-inverse .navbar-nav > li > a:hover {
+  background: #000;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: transparent;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a {
+  background: #000;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:hover {
+  background: #000;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background: #1a237e;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+  background-color: #303f9f;
+  color: #eeeeee;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+  background: #000;
+  color: #000;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+  background-color: #303f9f;
+  color: #eeeeee;
+}
+
+.nav-header {
+  background-color: $col-ignite-black;
+  color: $col-ignite-orange;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-header i.fa {
+  margin-left: 10px;
+  margin-right: 2px;
+  color: $col-ignite-orange;
+}
+
+.nav-header i.fa, .nav-header > i > a {
+  color: $col-ignite-orange;
+}
+
+@media screen and (max-width: $boot-xs){
+  .nav-header {
+    text-align: center;  
+  }
+}
+
+/* Footer */
+
+footer {
+  background: #000;
+  color:  $col-ignite-orange;
+}
+
+footer a{
+  color: $col-ignite-orange;
+  padding-left: 2px;
+}
+
+footer a:hover{
+ color: #9d9d9d; 
+}
+
+/* Flight Options */
+#flight-options-heading {
+  display: block;
+}
+
+@media screen and (max-width: $boot-lg){
+  #flight-options-heading {
+    display: none;
+  }
+}
+
+/* Flight */
+div > .flight {
+  width: 100%;
+  //display: flex;
+  //flex-wrap: wrap
+}
+
+/* Flight Card */
+.display-none{
+}
+
+.flight-card {
+  border-radius: 10px;
+  border: solid 2px $col-card-grey;
+  margin-bottom: 30px;
+  display: flex;
+  padding-bottom: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+  
+  min-width: 300px;
+}
+
+.data-container {
+  margin: 0 auto;
+}
+
+/* Flight Time */
+.flight-time {
+  
+}
+
+.flight-time > h1 {
+  color: $col-grey-light;
+  font-size: 30px;
+}
+
+.flight-time > h2 {
+  color: $col-grey-light;
+  font-weight:bold;
+  margin-bottom: 0px;
+}
+
+.flight-time span.font-normal {
+  color: $col-grey-light;
+  font-weight:normal;
+  font-size: 25px;
+}
+
+/* Arrivale Time */
+.arrival-time {
+  color: $col-grey-light;
+  text-align: right;
+  font-weight:normal;
+  font-size: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+/* Route Details */
+.route-details {
+  display: flex; 
+}
+
+/* Port */
+.port {
+  color: $col-grey-light;
+  padding-right: 5px;
+  font-weight:normal;
+  font-size: 25px;
+}
+
+.port-stopover {
+  padding-right: 5px;
+}
+
+/* Port Flight */
+.port-flight {
+  color: $col-grey-light; 
+  padding-right: 5px;
+}
+
+.port-flight .fa{
+  color: $col-grey-light;
+  padding-top: 4px;
+}
+
+/* Flight Duration */
+.flight-duration {
+  color: $col-grey-light;
+  font-weight:bold;
+  font-size: 25px;
+}
+
+/* Tooltip */
+.flight-tooltip {
+  position: relative;
+  cursor: help;
+}
+
+.flight-tooltip:hover .tip {
+  opacity: 1;
+  visibility:visible;
+  transition: all 0.5s;
+}
+
+.tip {
+  font-size: 20px;
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  color: #fff;
+  background: $col-tooltip-grey;
+  z-index: 110;
+  padding: 3px 0px;
+  border-radius: 3px;
+  opacity: 0;
+  visibility: hidden;
+  top: -43px;
+  transition: all 0.5s;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.port-flight .tip{
+  width: 120px;
+  text-align: center;
+  left: -45px;
+}
+
+.port-stopover .tip {
+  width: 175px;
+  text-align: center;
+  left: -55px;
+}
+
+.tip::after {
+  position: absolute;
+  left: 40%;
+  top: 100%;
+  content: "";
+  border-width: 10px 8px 0 8px;
+  border-style: solid;
+  border-color: $col-tooltip-grey transparent transparent transparent;
+  z-index: 110;
+}
+
+.tip .fa {
+  color: #fff;
+  margin-right: 10px;
+}

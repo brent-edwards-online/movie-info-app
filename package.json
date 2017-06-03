@@ -1,0 +1,22 @@
+{
+  "name": "movie-info-app",
+  "version": "1.0.0",
+  "description": "Movie search application with javascript and jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brent-edwards-online/movie-info-app.git"
+  },
+  "author": "Brent Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brent-edwards-online/movie-info-app/issues"
+  },
+  "homepage": "https://github.com/brent-edwards-online/movie-info-app#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
